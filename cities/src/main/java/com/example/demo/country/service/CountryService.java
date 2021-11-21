@@ -22,17 +22,8 @@ public class CountryService {
         return repository.findById(name);
     }
 
-    public List<Country> findAll(){
-        return repository.findAll();
-    }
-
     @Transactional
     public void create(Country country){
-        repository.save(country);
-    }
-
-    @Transactional
-    public void update(Country country){
         repository.save(country);
     }
 

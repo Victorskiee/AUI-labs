@@ -21,10 +21,6 @@ public class Country {
     @Column(name = "country_name")
     private String name;
 
-    private int nrOfInhabitants;
-
-    private double gdpChange;
-
     @OneToMany(mappedBy = "country", cascade = CascadeType.REMOVE)
     @ToString.Exclude
     @Basic(fetch = FetchType.LAZY)
