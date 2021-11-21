@@ -1,11 +1,7 @@
 package com.example.demo.Administration.dto;
 
-import com.example.demo.Administration.entity.Country;
 import lombok.*;
-
-import java.util.Collection;
-import java.util.List;
-import java.util.function.Function;
+import java.util.*;
 
 @Getter
 @Setter

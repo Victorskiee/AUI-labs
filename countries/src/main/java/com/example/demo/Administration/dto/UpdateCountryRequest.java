@@ -1,10 +1,7 @@
 package com.example.demo.Administration.dto;
 
-import com.example.demo.Administration.entity.City;
 import com.example.demo.Administration.entity.Country;
 import lombok.*;
-
-import java.util.function.BiFunction;
 
 @Getter
 @Setter
