@@ -1,7 +1,7 @@
 package com.example.demo.Configuration;
 
-import com.example.demo.Administration.entity.Country;
-import com.example.demo.Administration.service.CountryService;
+import com.example.demo.country.entity.Country;
+import com.example.demo.country.service.CountryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

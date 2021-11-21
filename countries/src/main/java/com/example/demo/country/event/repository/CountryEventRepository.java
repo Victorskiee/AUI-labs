@@ -1,7 +1,7 @@
-package com.example.demo.Administration.event.repository;
+package com.example.demo.country.event.repository;
 
-import com.example.demo.Administration.entity.Country;
-import com.example.demo.Administration.event.dto.CreateCountryRequest;
+import com.example.demo.country.entity.Country;
+import com.example.demo.country.event.dto.CreateCountryRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;

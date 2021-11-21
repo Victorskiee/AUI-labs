@@ -1,6 +1,6 @@
-package com.example.demo.Administration.repository;
+package com.example.demo.country.repository;
 
-import com.example.demo.Administration.entity.Country;
+import com.example.demo.country.entity.Country;
 import org.springframework.stereotype.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 

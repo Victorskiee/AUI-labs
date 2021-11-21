@@ -1,8 +1,8 @@
-package com.example.demo.Administration.controller;
+package com.example.demo.country.controller;
 
-import com.example.demo.Administration.dto.*;
-import com.example.demo.Administration.entity.Country;
-import com.example.demo.Administration.service.CountryService;
+import com.example.demo.country.dto.*;
+import com.example.demo.country.entity.Country;
+import com.example.demo.country.service.CountryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

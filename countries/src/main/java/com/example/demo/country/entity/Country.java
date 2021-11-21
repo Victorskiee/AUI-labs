@@ -1,4 +1,4 @@
-package com.example.demo.Administration.entity;
+package com.example.demo.country.entity;
 
 import lombok.*;
 import javax.persistence.*;

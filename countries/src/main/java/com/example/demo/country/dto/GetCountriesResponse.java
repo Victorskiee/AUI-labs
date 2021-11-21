@@ -1,4 +1,4 @@
-package com.example.demo.Administration.dto;
+package com.example.demo.country.dto;
 
 import lombok.*;
 import java.util.*;
@@ -28,7 +28,7 @@ public class GetCountriesResponse {
     @Singular
     private List<Country> countries;
 
-    public static GetCountriesResponse entityToDtoMapper(Collection<com.example.demo.Administration.entity.Country> countries){
+    public static GetCountriesResponse entityToDtoMapper(Collection<com.example.demo.country.entity.Country> countries){
         GetCountriesResponse.GetCountriesResponseBuilder response = GetCountriesResponse.builder();
         countries.stream()
                 .map(country -> Country.builder()
