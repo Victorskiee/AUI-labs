@@ -1,20 +1,17 @@
-package com.example.demo.Administration.controller;
+package com.example.demo.country.controller;
 
-import com.example.demo.Administration.dto.*;
-import com.example.demo.Administration.entity.City;
-import com.example.demo.Administration.entity.Country;
-import com.example.demo.Administration.service.CityService;
-import com.example.demo.Administration.service.CountryService;
+import com.example.demo.city.dto.*;
+import com.example.demo.city.entity.City;
+import com.example.demo.city.service.CityService;
+import com.example.demo.country.entity.Country;
+import com.example.demo.country.service.CountryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
-import java.util.function.BiFunction;
-import java.util.function.Function;
 
 @RestController
 @RequestMapping("api/countries")
@@ -102,7 +99,7 @@ public class CountryController {
 
     //----------------------------------------------------------------------------------
 
-    @GetMapping
+    /*@GetMapping
     public ResponseEntity<GetCountriesResponse> getCountries(){
         List<Country> all = countryService.findAll();
         GetCountriesResponse response = GetCountriesResponse.entityToDtoMapper(all);
@@ -162,5 +159,5 @@ public class CountryController {
             countryService.update(c);
             return ResponseEntity.accepted().build();
         }
-    }
+    }*/
 }

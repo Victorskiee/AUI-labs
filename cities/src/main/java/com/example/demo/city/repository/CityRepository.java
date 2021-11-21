@@ -1,12 +1,10 @@
-package com.example.demo.Administration.repository;
+package com.example.demo.city.repository;
 
-import com.example.demo.Administration.entity.City;
-import com.example.demo.Administration.entity.Country;
-import com.example.demo.Storage.DataStorage;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.demo.city.entity.City;
+import com.example.demo.country.entity.Country;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import java.util.ArrayList;
+
 import java.util.List;
 import java.util.Optional;
 

@@ -1,5 +1,6 @@
-package com.example.demo.Administration.entity;
+package com.example.demo.country.entity;
 
+import com.example.demo.city.entity.City;
 import lombok.*;
 
 import javax.persistence.*;

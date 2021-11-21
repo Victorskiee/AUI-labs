@@ -1,11 +1,9 @@
-package com.example.demo.Administration.dto;
+package com.example.demo.city.dto;
 
-import com.example.demo.Administration.entity.City;
 import lombok.*;
 
 import java.util.Collection;
 import java.util.List;
-import java.util.function.Function;
 
 @Getter
 @Setter
@@ -34,7 +32,7 @@ public class GetCitiesResponse {
     @Singular
     private List<City> cities;
 
-    public static GetCitiesResponse entityToDtoMapper(Collection<com.example.demo.Administration.entity.City> cities){
+    public static GetCitiesResponse entityToDtoMapper(Collection<com.example.demo.city.entity.City> cities){
         GetCitiesResponseBuilder response = GetCitiesResponse.builder();
         cities.stream()
                 .map(city -> City.builder()

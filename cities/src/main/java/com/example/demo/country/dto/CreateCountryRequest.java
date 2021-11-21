@@ -1,10 +1,7 @@
-package com.example.demo.Administration.dto;
+package com.example.demo.country.dto;
 
-import com.example.demo.Administration.entity.City;
-import com.example.demo.Administration.entity.Country;
+import com.example.demo.country.entity.Country;
 import lombok.*;
-
-import java.util.function.Function;
 
 @Getter
 @Setter

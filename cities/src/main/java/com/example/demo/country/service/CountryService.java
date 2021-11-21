@@ -1,9 +1,7 @@
-package com.example.demo.Administration.service;
+package com.example.demo.country.service;
 
-import com.example.demo.Administration.entity.City;
-import com.example.demo.Administration.entity.Country;
-import com.example.demo.Administration.repository.CityRepository;
-import com.example.demo.Administration.repository.CountryRepository;
+import com.example.demo.country.entity.Country;
+import com.example.demo.country.repository.CountryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
