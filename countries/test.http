@@ -1,0 +1,119 @@
+GET http://localhost:8080/api/cities
+
+###
+
+GET http://localhost:8080/api/cities/1
+
+###
+
+GET http://localhost:8080/api/cities/2
+
+###
+
+GET http://localhost:8080/api/cities/4
+
+###
+
+GET http://localhost:8080/api/countries/France/cities
+
+###
+
+GET http://localhost:8080/api/countries/France/cities/1
+
+###
+
+GET http://localhost:8080/api/countries/France/cities/2
+
+###
+
+POST http://localhost:8080/api/cities
+Content-Type: application/json
+
+{
+  "name": "Sopot",
+  "nrOfStreets": 99
+}
+
+###
+
+POST http://localhost:8080/api/countries/France/cities
+Content-Type: application/json
+
+{
+  "name": "Montpellier",
+  "nrOfStreets": 99
+}
+
+###
+
+DELETE http://localhost:8080/api/cities/5
+
+###
+
+DELETE http://localhost:8080/api/countries/France/cities/2
+
+###
+
+PUT http://localhost:8080/api/cities/3
+Content-Type: application/json
+
+{
+  "name": "Manchester",
+  "nrOfStreets": 999
+}
+
+###
+
+PUT http://localhost:8080/api/countries/France/cities/5
+Content-Type: application/json
+
+{
+  "name": "Marsille",
+  "nrOfStreets": 333
+}
+
+##############################################
+
+GET http://localhost:8080/api/countries
+
+###
+
+GET http://localhost:8080/api/countries/France
+
+###
+
+GET http://localhost:8080/api/countries/Poland
+
+###
+
+GET http://localhost:8080/api/countries/Spain
+
+###
+
+POST http://localhost:8080/api/countries
+Content-Type: application/json
+
+{
+  "name": "USA",
+  "nrOfInhabitants": 444444444,
+  "gdpChange": 9.99
+}
+
+###
+
+GET http://localhost:8080/api/countries/USA
+
+###
+
+DELETE http://localhost:8080/api/countries/Spain
+
+###
+
+PUT http://localhost:8080/api/countries/France/
+Content-Type: application/json
+
+{
+  "nrOfInhabitants": 757575775,
+  "gdpChange": -0.01
+}
+
