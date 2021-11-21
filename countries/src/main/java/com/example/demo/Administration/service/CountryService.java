@@ -1,6 +1,7 @@
 package com.example.demo.Administration.service;
 
 import com.example.demo.Administration.entity.Country;
+import com.example.demo.Administration.event.repository.CountryEventRepository;
 import com.example.demo.Administration.repository.CountryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,9 +14,12 @@ import java.util.Optional;
 public class CountryService {
     private CountryRepository repository;
 
+    private CountryEventRepository eventRepository;
+
     @Autowired
-    public CountryService(CountryRepository repository){
+    public CountryService(CountryRepository repository, CountryEventRepository eventRepository){
         this.repository = repository;
+        this.eventRepository = eventRepository;
     }
 
     public Optional<Country> find(String name){
@@ -29,6 +33,7 @@ public class CountryService {
     @Transactional
     public void create(Country country){
         repository.save(country);
+        eventRepository.create(country);
     }
 
     @Transactional
@@ -38,6 +43,7 @@ public class CountryService {
 
     @Transactional
     public void delete(String id){
+        eventRepository.delete(id);
         repository.deleteById(id);
     }
 }
