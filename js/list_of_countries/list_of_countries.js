@@ -4,7 +4,7 @@ import {getBackendUrl} from "../js_scripts/configuration.js";
 window.addEventListener('load', () => {
     fetchAndDisplayCountries();
 });
-
+//
 function fetchAndDisplayCountries() {
    const xhttp = new XMLHttpRequest();
    xhttp.onreadystatechange = function (){
