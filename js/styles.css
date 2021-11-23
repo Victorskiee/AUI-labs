@@ -1,0 +1,151 @@
+body {
+    background-color: #553C68;
+    font-family: Georgia serif;
+}
+
+.container {
+    margin: 50px auto;
+    width: 1000px;
+}
+
+.header {
+    text-align: center;
+    background: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 10px;
+    font-style: italic;
+}
+
+h2 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+.navigation-bar {
+    background-color: #FFFFFF;
+}
+
+.navigation-bar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-bar li {
+    display: inline-block;
+    margin: 0 130px;
+}
+
+.navigation-bar a {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.navigation-bar a:hover {
+    background-color: #ECE3E3;
+    color: #7C6666;
+}
+
+.main-section {
+    padding: 10px;
+    background-color: #E0EEF7;
+}
+
+.text--justified {
+    text-align: justify;
+}
+
+.text--italic {
+    font-style: italic;
+}
+
+.text--bold {
+    font-weight: bold;
+}
+
+.ui-control {
+    border-color: #214753;
+    background-color: #E0EEF7;
+    border-width: 1px;
+    padding: 3px;
+    font-family: Georgia serif;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.ui-control:focus {
+    outline: none;
+}
+
+.ui-control:hover {
+    outline: none;
+    background-color: #B3D8F0;
+    cursor: pointer;
+}
+
+.ui-button {
+    height: 24px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#tableBody a {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000000;
+    font-style: italic;
+}
+
+#tableBody a:hover {
+    font-weight: bold;
+}
+
+.data-table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.data-table td, .data-table th {
+    padding: 10px;
+}
+
+.data-table thead {
+    font-weight: bold;
+    background-color: #C4CED5;
+    color: #4B2F2F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
