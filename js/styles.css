@@ -56,6 +56,18 @@ body {
     background-color: #E0EEF7;
 }
 
+.text--justified {
+    text-align: justify;
+}
+
+.text--italic {
+    font-style: italic;
+}
+
+.text--bold {
+    font-weight: bold;
+}
+
 
 
 
