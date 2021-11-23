@@ -111,9 +111,40 @@ DELETE http://localhost:8080/api/countries/Spain
 
 PUT http://localhost:8080/api/countries/France/
 Content-Type: application/json
-
 {
   "nrOfInhabitants": 757575775,
   "gdpChange": -0.01
 }
 
+###
+
+POST http://localhost:8080/api/countries
+Content-Type: application/json
+
+{
+"name": "Poland",
+"nrOfInhabitants": 444444444,
+"gdpChange": 9.99
+}
+
+###
+
+POST http://localhost:8080/api/countries
+Content-Type: application/json
+
+{
+  "name": "France",
+  "nrOfInhabitants": 444444444,
+  "gdpChange": 9.99
+}
+
+###
+
+POST http://localhost:8080/api/countries
+Content-Type: application/json
+
+{
+  "name": "Spain",
+  "nrOfInhabitants": 444444444,
+  "gdpChange": 9.99
+}
