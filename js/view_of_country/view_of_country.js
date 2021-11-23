@@ -1,5 +1,5 @@
 import {getParameterByName, clearElementChildren, createLinkCell, createButtonCell, createTextCell,
-        setTextNode} from "../js_scripts/utilities";
+        setTextNode} from "../js_scripts/utilities.js";
 import {getBackendUrl} from "../js_scripts/configuration.js";
 
 window.addEventListener('load', () => {
@@ -50,7 +50,7 @@ function deleteCity(city){
     xhttp.send();
 }
 
-function fetchAndDisplayCity(){
+function fetchAndDisplayCountry(){
     const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function (){
         if (this.readyState === 4 && this.status === 200){
@@ -63,6 +63,6 @@ function fetchAndDisplayCity(){
 
 function displayCountry(country){
     setTextNode('country_name', country.name);
-    setTextNode('name', country.gdpChange);
-    setTextNode('surname', country.nrOfInhabitants);
+    setTextNode('gdp', country.gdpChange);
+    setTextNode('citizens', country.nrOfInhabitants);
 }
