@@ -1,5 +1,5 @@
-import {clearElementChildren, createLinkCell, createTextCell, createButtonCell} from "../js_scripts/utilities";
-import {getBackendUrl} from "../js_scripts/configuration";
+import {clearElementChildren, createLinkCell, createTextCell, createButtonCell} from "../js_scripts/utilities.js";
+import {getBackendUrl} from "../js_scripts/configuration.js";
 
 window.addEventListener('load', () => {
     fetchAndDisplayCountries();
@@ -30,9 +30,9 @@ function displayCountries(countries) {
 
 function createTableRow(country) {
    let tr = document.createElement("tr");
-   const tdText = createTextCell(country);
-   const tdLink = createLinkCell('view', '../view_of_country/view_of_country.html?country=' + country);
-   const tdDelete = createButtonCell('delete', () => deleteCountry(country));
+   const tdText = createTextCell(country.name);
+   const tdLink = createLinkCell('view', '../view_of_country/view_of_country.html?country=' + country.name);
+   const tdDelete = createButtonCell('delete', () => deleteCountry(country.name));
    tr.appendChild(tdText);
    tr.appendChild(tdLink);
    tr.appendChild(tdDelete);
@@ -47,6 +47,6 @@ function deleteCountry(country) {
         }
     };
     
-    xhttp.open("DELETE", getBackendUrl() + '/api/countries' + country, true);
+    xhttp.open("DELETE", getBackendUrl() + '/api/countries/' + country, true);
     xhttp.send();
 }
