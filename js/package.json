@@ -3,7 +3,7 @@
   "version": "1.0.0-SNAPSHOT",
   "description": "Simple Administration app",
   "keywords": [
-    "Administration",
+    "Administration"
   ],
   "author": "Wiktor Krasiński",
   "scripts": {

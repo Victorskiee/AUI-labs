@@ -4,7 +4,7 @@ export function clearElementChildren(element) {
         element.removeChild(element.firstChild);
     }
 }
-//
+
 export function createButtonCell(text, action) {
     const td = document.createElement("td");
     const button = document.createElement("button");
