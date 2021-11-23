@@ -18,11 +18,11 @@ GET http://localhost:8080/api/countries/France/cities
 
 ###
 
-GET http://localhost:8080/api/countries/France/cities/1
+GET http://localhost:8082/api/countries/France/cities/1
 
 ###
 
-GET http://localhost:8080/api/countries/France/cities/2
+GET http://localhost:8082/api/countries/France/cities/2
 
 ###
 
@@ -116,4 +116,3 @@ Content-Type: application/json
   "nrOfInhabitants": 757575775,
   "gdpChange": -0.01
 }
-

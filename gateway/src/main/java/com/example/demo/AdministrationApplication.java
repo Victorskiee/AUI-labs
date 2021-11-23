@@ -32,7 +32,7 @@ public class AdministrationApplication {
 				.route("cities", r -> r
 						.host("localhost:8080")
 						.and()
-						.path("/api/cities", "/api/cities/**", "/api/cities/{country}/cities", "/api/cities/{country}/cities/**")
+						.path("/api/cities", "/api/cities/**", "/api/countries/{country}/cities", "/api/countries/{country}/cities/**")
 						.uri("http://localhost:8082"))
 				.build();
 	}
