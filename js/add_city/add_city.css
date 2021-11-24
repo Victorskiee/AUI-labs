@@ -4,4 +4,9 @@
 
 #send {
     margin-left: 120px;
+    padding: 2px 10px;
+}
+
+.nrOfStreets {
+    margin-left: 0;
 }
