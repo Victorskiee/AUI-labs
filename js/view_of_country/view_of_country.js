@@ -3,6 +3,8 @@ import {getParameterByName, clearElementChildren, createLinkCell, createButtonCe
 import {getBackendUrl} from "../js_scripts/configuration.js";
 
 window.addEventListener('load', () => {
+    const addCity = document.getElementById('addCity');
+    addCity.href = '../add_city/add_city.html?country=' + getParameterByName('country');
     fetchAndDisplayCountry();
     fetchAndDisplayCities();
 });
