@@ -13,6 +13,7 @@ function fetchAndDisplayCities(){
     const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function (){
         if (this.readyState === 4 && this.status === 200){
+            console.log(this.responseText);
             displayCities(JSON.parse(this.responseText))
         }
     };
@@ -34,7 +35,9 @@ function displayCities(cities){
 function createTableRow(city){
     let tr = document.createElement('tr');
     tr.appendChild(createTextCell(city.name));
-    tr.appendChild(createLinkCell('edit', '../edit_of_city/edit_of_city.html?city='
+    tr.appendChild(createLinkCell('view', '../view_of_city/view_of_city.html?country='
+        + getParameterByName('country') + '&city=' + city.id));
+    tr.appendChild(createLinkCell('edit', '../edit_of_city/edit_of_city.html?country='
         + getParameterByName('country') + '&city=' + city.id));
     tr.appendChild(createButtonCell('delete', () => deleteCity(city.id)));
     return tr;

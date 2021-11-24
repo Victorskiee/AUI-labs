@@ -1,5 +1,7 @@
-.city_form{
-    display: grid;
-    grid-template-columns: 100px 200px;
-    grid-gap: 10px;
+#name {
+    margin-left: 40px;
+}
+
+#send {
+    margin-left: 120px;
 }

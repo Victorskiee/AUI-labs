@@ -1,0 +1,23 @@
+.centered-div{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-left: 50px;
+}
+
+span {
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.data-table img {
+    width: 100px;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+

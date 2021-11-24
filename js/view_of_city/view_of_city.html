@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Administration web application"/>
+    <meta name="keywords" content="Administration"/>
+    <meta name="author" content="Wiktor Krasiński"/>
+    <title>Administration app</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="view_of_city.css"/>
+    <script src="../script.js" defer="defer"></script>
+    <script type="module" src="view_of_city.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Administration app</h1>
+    </header>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../index.html">home</a></li>
+            <li><a href="../about/about.html">about</a></li>
+            <li><a href="../list_of_countries/list_of_countries.html">countries</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <article class="text--justified">
+            <header><h2 id="city_name">name of country</h2></header>
+            <section>
+                <h3>Details</h3>
+                <div class="details-grid">
+                    <div class="centered-div">
+                        id:<span id="id"></span><br/>
+                        name:<span id="name"></span><br/>
+                        country:<span id="country"></span><br/>
+                        nr of streets:<span id="nrOfStreets"></span>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </section>
+</div>
+</body>
+</html>
