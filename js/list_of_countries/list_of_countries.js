@@ -32,9 +32,11 @@ function createTableRow(country) {
    let tr = document.createElement("tr");
    const tdText = createTextCell(country.name);
    const tdLink = createLinkCell('view', '../view_of_country/view_of_country.html?country=' + country.name);
+   const tdEdit = createLinkCell('edit', '../edit_of_country/edit_of_country.html?country=' + country.name);
    const tdDelete = createButtonCell('delete', () => deleteCountry(country.name));
    tr.appendChild(tdText);
    tr.appendChild(tdLink);
+   tr.appendChild(tdEdit);
    tr.appendChild(tdDelete);
    return tr;
 }

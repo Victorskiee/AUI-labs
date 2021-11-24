@@ -2,14 +2,13 @@ import {getParameterByName} from "../js_scripts/utilities.js";
 import {getBackendUrl} from "../js_scripts/configuration.js";
 
 window.addEventListener('load', () => {
-    const infoForm = document.getElementById('infoForm');
+    const countryForm = document.getElementById('countryForm');
+    countryForm.addEventListener('submit', event => updateInfoAction(event));
 
-    infoForm.addEventListener('submit', event => updateInfoAction(event));
-
-    fetchAndDisplayCity();
+    fetchAndDisplayCountry();
 });
 
-function fetchAndDisplayCity(){
+function fetchAndDisplayCountry(){
     const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function (){
         if (this.readyState === 4 && this.status === 200){
@@ -23,8 +22,7 @@ function fetchAndDisplayCity(){
         }
     };
 
-    xhttp.open("GET", getBackendUrl() + '/api/countries/' + getParameterByName('country')
-        + '/cities/' + getParameterByName('city'), true);
+    xhttp.open("GET", getBackendUrl() + '/api/countries/' + getParameterByName('country'),true);
     xhttp.send();
 }
 
@@ -34,17 +32,16 @@ function updateInfoAction(event){
     const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function (){
         if (this.readyState === 4 && this.status === 200){
-            fetchAndDisplayCity();
+            fetchAndDisplayCountry();
             console.log('zaktualizowano!');
         }
     };
 
-    xhttp.open("PUT", getBackendUrl() + '/api/countries/' + getParameterByName('country')
-        + '/cities/' + getParameterByName('city'), true);
+    xhttp.open("PUT", getBackendUrl() + '/api/countries/' + getParameterByName('country'), true);
 
     const request = {
-        'name': document.getElementById('name').value,
-        'nrOfStreets': document.getElementById('nrOfStreets').value
+        'nrOfInhabitants': document.getElementById('nrOfInhabitants').value,
+        'gdpChange': document.getElementById('gdpChange').value
     };
 
     xhttp.setRequestHeader('Content-Type', 'application/json');
